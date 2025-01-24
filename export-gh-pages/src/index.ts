@@ -1,4 +1,8 @@
-import { CardSearcher } from "core/CardSearcher";
+import { CardSearcher as CSInner } from "core/CardSearcher";
 import CardList from "../../data/cardList.json";
 
-var CardSearcherInstance = new CardSearcher(CardList);
+export class CardSearcher extends CSInner {
+  constructor() {
+    super(CardList);
+  }
+}
