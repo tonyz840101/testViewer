@@ -1,11 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.CardGroup = void 0;
-class CardGroup {
-    name;
-    cards = {};
-    numberOfCards = 0;
+export class CardGroup {
     constructor(name) {
+        this.cards = {};
+        this.numberOfCards = 0;
         this.name = name;
     }
     addCard(cardId, count) {
@@ -52,4 +48,3 @@ class CardGroup {
         };
     }
 }
-exports.CardGroup = CardGroup;
