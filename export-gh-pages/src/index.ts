@@ -6,3 +6,5 @@ export class CardSearcher extends CSInner {
     super(CardList);
   }
 }
+
+(<any>globalThis).CardSearcher = new CardSearcher();
