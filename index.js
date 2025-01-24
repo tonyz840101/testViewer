@@ -52422,5 +52422,9 @@
   ];
 
   // src/index.ts
-  var CardSearcherInstance = new CardSearcher(cardList_default);
+  var CardSearcher2 = class extends CardSearcher {
+    constructor() {
+      super(cardList_default);
+    }
+  };
 })();
