@@ -8,7 +8,7 @@
   "license": "NONE",
   "homepage": "https://username.github.io/testViewer",
   "scripts": {
-    "build": "tsc",
+    "build": "esbuild src/index.ts --bundle --outfile=index.js && Move .\\index.js .\\build\\index.js && cp .\\src\\index.html .\\build\\index.html",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
@@ -17,6 +17,7 @@
     "typescript": "^5.7.3"
   },
   "devDependencies": {
+    "esbuild": "^0.24.2",
     "gh-pages": "^6.3.0"
   }
 }
