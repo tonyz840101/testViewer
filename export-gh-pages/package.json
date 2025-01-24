@@ -9,7 +9,6 @@
   "homepage": "https://username.github.io/testViewer",
   "scripts": {
     "build": "tsc",
-    "build-test": "tsc -p testTsconfig.json",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
